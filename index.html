@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=NTR&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <title>Project z</title>
+  </head>
+  <body>
+    <h1 class="hero-title">
+      <span id="typing-animation"></span><span id="cursor">|</span>
+    </h1>
+
+    <!-- toggle btn -->
+    <div class="btn" id="toggle-btn">
+      <div class="btn-outline btn-outline-1"></div>
+      <div class="btn-outline btn-outline-2"></div>
+      <div id="hamburger"><span></span></div>
+    </div>
+
+    <!-- svg overlay -->
+    <div class="overlay">
+      <svg viewBox="0 0 1000 1000">
+        <path d="M0 2S175 1 500 1s500 1 500 1V0H0Z"></path>
+      </svg>
+    </div>
+
+    <!-- menu items -->
+    <div class="menu">
+      <div class="primary-menu">
+        <div class="menu-container">
+          <div class="wrapper">
+            <div class="menu-item">
+              <a href="#">/ home</a>
+              <div class="menu-item-revealer"></div>
+            </div>
+
+            <div class="menu-item">
+              <a href="#">/ about</a>
+              <div class="menu-item-revealer"></div>
+            </div>
+
+            <div class="menu-item">
+              <a href="#">/ projects</a>
+              <div class="menu-item-revealer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/CSSRulePlugin.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
